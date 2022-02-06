@@ -56,7 +56,7 @@ I built different types of classifiers first
 
 I used classification metrics like Cross Validation, Confusion matrix, Precision/Recall Tradeoff (Precision score, Recall score and threshold),ROC curve and roc auc score, Error analysis methods after plotting the confusion matrix.
 
-###Some Plots
+### Some Plots
 
 Precision vs Recall
 ![Precision vs Recall](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/mnist-digits-classification/images/classification/precision_vs_recall_plot.png)
