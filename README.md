@@ -26,7 +26,7 @@ I followed all these steps in the jupyter notebook and I clearly explained all t
 
 ### Insights Obtained
 
-![California Housing Prices Advanced plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/california-housing-prices-prediction/images/end_to_end_project_practice/california_housing_prices_advanced_plt.jpg)
+![California Housing Prices Advanced plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/california-housing-prices-prediction/images/end_to_end_project_practice/california_housing_prices_advanced_plt.png)
 
 
 I used several models for this predictor but I settled on a Random forest Regressor where I selected the 15 best features and and the best hyperparameters using a random search CV. I pickled the best model and the best SVM I made.
