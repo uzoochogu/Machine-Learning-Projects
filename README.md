@@ -26,7 +26,7 @@ I followed all these steps in the jupyter notebook and I clearly explained all t
 
 ### Insights Obtained
 
-![California Housing Prices Advanced plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/california-housing-prices-prediction/images/end_to_end_project_practice/california_housing_prices_advanced_plt.jpg)
+![California Housing Prices Advanced plot](/california-housing-prices-prediction/images/end_to_end_project_practice/california_housing_prices_advanced_plt.png)
 
 
 I used several models for this predictor but I settled on a Random forest Regressor where I selected the 15 best features and and the best hyperparameters using a random search CV. I pickled the best model and the best SVM I made.
@@ -40,7 +40,7 @@ The Dataset was fetched using SciKit-Learn OpenML function (fetch_openml("mnist_
 
 
 Some Digits from the Dataset
-![Some Digits](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/mnist-digits-classification/images/classification/more_digits_plot.jpg)
+![Some Digits](/mnist-digits-classification/images/classification/more_digits_plot.jpg)
 
 
 
@@ -59,19 +59,19 @@ I used classification metrics like Cross Validation, Confusion matrix, Precision
 ### Some Plots
 
 Precision vs Recall
-![Precision vs Recall](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/mnist-digits-classification/images/classification/precision_vs_recall_plot.jpg)
+![Precision vs Recall](/mnist-digits-classification/images/classification/precision_vs_recall_plot.jpg)
 
 
 Recall vs Threshold
-![Recall vs Threshold](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/mnist-digits-classification/images/classification/precision_recall_vs_threshold_plot.jpg)
+![Recall vs Threshold](/mnist-digits-classification/images/classification/precision_recall_vs_threshold_plot.jpg)
 
 
 ROC curve
-![ROC curve](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/mnist-digits-classification/images/classification/roc_curve_comparison_plot.jpg)
+![ROC curve](/mnist-digits-classification/images/classification/roc_curve_comparison_plot.jpg)
 
 
 Error Analysis (The Diagonal was removed, the brighter values shows the highest inaccuracies)
-![Error Analysis](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/mnist-digits-classification/images/classification/conf_matrix_errors_colour_plot.jpg)
+![Error Analysis](/mnist-digits-classification/images/classification/conf_matrix_errors_colour_plot.jpg)
 
 
 
