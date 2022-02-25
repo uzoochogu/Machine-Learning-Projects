@@ -2,6 +2,11 @@
 
 A Repo for my AI, Data Science and Machine Learning Projects
 
+## Content
+1. California Housing Prices Predictor
+2. MNIST Digits Classifier- (Rite of Passage)
+3. Titanic Survival Predictor
+4. Spam Message Classifier (Work In Progress)
 
 ## Project 1: California Housing Prices Predictor
 
@@ -72,6 +77,39 @@ ROC curve
 
 Error Analysis (The Diagonal was removed, the brighter values shows the highest inaccuracies)
 ![Error Analysis](/mnist-digits-classification/images/classification/conf_matrix_errors_colour_plot.jpg)
+
+
+
+
+## Project 3: Titanic Survival Predictor
+
+[Link to Dataset](https://raw.githubusercontent.com/ageron/handson-ml2/master/datasets/titanic/)
+
+### **Problem Statement**: The goal is to predict whether or not a passenger survived based on attributes such as their age, sex, passenger class, where they embarked and so on. This is a Kaggle competition and the dataset has already been split into a Training and Test set. The Test set doesn't contain the Labels.
+
+### Output: 
+An CSV containing the predicted value of "True" or "False", representing the "Survived" Label in the dataset. This CSV can be submitted on Kaggle to get your accuracy score.
+
+### Methodology
+1. After peeking at the data, I discovered that **Age**, **Cabin** and **Embarked** have some missing data. I dropped **Cabin** entirely and replaced the missing data of **Age** with median age after careful analysis.
+2. I preprocessed the numerical and categorical data seperately. I converted the categorical data into a numerical form using OneHotEncoder
+3. I then trained an Random Forest Classifier using 100 estimators and evaluated it (I acheieved an accuracy of 81.6% on the test set)
+4. Next I tried a Support Vector Classifier and after cross validation I achieved 82.6% accuracy .
+5. I then engineered some features:  
+    * Converted numerical attributes to categorical attributes: for example, different age groups had very different survival rates (see below), so I created an age bucket category and use it instead of the age.
+    * have a special category for people traveling alone since only 30% of them survived (see below).
+    * Replace **SibSp** and **Parch** with their sum.
+6. Then I tuned my SVC hyperparameters using a GridSearch until I achieved a accuracy of 82.71%.
+7. I will try other models, evaluate my engineered features and continue some tuning hyperparameters
+
+
+
+## Project 4: Spam Message Classifier
+
+(Work in Progress)
+
+
+
 
 
 
