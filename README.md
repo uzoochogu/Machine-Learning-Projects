@@ -112,6 +112,7 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 1. Obtained the dataset from this [Root Directory](http://spamassassin.apache.org/old/publiccorpus/) , but these are the specific links to the [spam](http://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2) and [ham](http://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2) mails.
 2. I parsed the Emails and obtained the text from the raw html files.
 3. I carried out Stemming using the Natural Language Toolkit Module (NLTK). 
+4. I created transformers to extract extra features for example, EmailsToWordCounter and WordCounterToVector. Extracting words works for many written languages like English.
 
 
 
