@@ -106,7 +106,7 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 
 ## Project 4: Spam Message Classifier
 
-(Work in Progress)
+(Almost complete...Finishing Touches)
 
 ### Methodology
 1. Obtained the dataset from this [Root Directory](http://spamassassin.apache.org/old/publiccorpus/) , but these are the specific links to the [spam](http://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2) and [ham](http://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2) mails.
@@ -118,6 +118,11 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 7. Evaluation on the test set gives: 
 - Precision: 96.88%
 - Recall: 97.89%
+7. I will explore using the BeautifulSoup Lib for better parsing.
+
+## Project  5: Implementation of Common Machine Learning Algorithms
+
+(Work in Progress)
 
 
 
