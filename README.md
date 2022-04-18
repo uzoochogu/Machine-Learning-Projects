@@ -118,7 +118,7 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 7. Evaluation on the test set gives: 
 - Precision: 96.88%
 - Recall: 97.89%
-7. I will explore using the BeautifulSoup Lib for better parsing.
+8. I also explored using the BeautifulSoup Library for better parsing stability.
 
 ## Project  5: Implementation of Common Machine Learning Algorithms
 
