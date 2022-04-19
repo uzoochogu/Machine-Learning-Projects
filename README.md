@@ -122,6 +122,10 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 
 ## Project  5: Implementation of Common Machine Learning Algorithms
 
+This notebook is dedicated to exploring and describing different Machine learning algorithms. I will discuss the following here:
+1. Linear Regression
+2. Neural Networks
+3. Support Vector Machines
 (Work in Progress)
 
 
