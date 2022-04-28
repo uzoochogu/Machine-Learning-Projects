@@ -6,7 +6,8 @@ A Repo for my AI, Data Science and Machine Learning Projects
 1. California Housing Prices Predictor
 2. MNIST Digits Classifier- (Rite of Passage)
 3. Titanic Survival Predictor
-4. Spam Message Classifier (Work In Progress)
+4. Spam Message Classifier 
+5. Description of some Machine Learning Algorithms
 
 ## Project 1: California Housing Prices Predictor
 
@@ -120,12 +121,13 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 - Recall: 97.89%
 8. I also explored using the BeautifulSoup Library for better parsing stability.
 
-## Project  5: Implementation of Common Machine Learning Algorithms
+## Project  5: Description of some Machine Learning Algorithms
 
 This notebook is dedicated to exploring and describing different Machine learning algorithms. I will discuss the following here:
 1. Linear Regression
-2. Neural Networks
-3. Support Vector Machines
+2. Gradient Descent
+3. Mini Batch Gradient Descent
+4. Polynomial Regression
 (Work in Progress)
 
 
