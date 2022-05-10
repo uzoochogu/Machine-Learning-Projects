@@ -125,11 +125,14 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 
 This notebook is dedicated to exploring and describing different Machine learning algorithms. I will discuss the following here:
 1. Linear Regression
-2. Gradient Descent
-3. Mini Batch Gradient Descent
-4. Polynomial Regression
-(Work in Progress)
+- SVD and or Normal Equation
+- Gradient Descent
+- Mini Batch Gradient Descent
+- Polynomial Regression
 
+2. Polynomial Regression
+
+(Work in Progress)
 
 
 
