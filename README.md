@@ -130,7 +130,15 @@ This notebook is dedicated to exploring and describing different Machine learnin
 - Mini Batch Gradient Descent
 - Polynomial Regression
 
-2. Polynomial Regression
+2. Polynomial Regression (Using Linear models to fit non-linear data)
+
+3. Regularization
+- Ridge Regression
+- Lasso Regression
+- Elastic Net
+- Early Stopping (Very common in Gradient Descent)
+
+4. Logistic Regression (Using Probabilities)
 
 (Work in Progress)
 
