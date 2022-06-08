@@ -139,6 +139,7 @@ This notebook is dedicated to exploring and describing different Machine learnin
 - Early Stopping (Very common in Gradient Descent)
 
 4. Logistic Regression (Using Probabilities)
+- Softmax Regression - A method to use Logistic Regression for Multinomial/ Multiclass Classification. 
 
 (Work in Progress)
 
