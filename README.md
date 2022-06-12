@@ -124,21 +124,33 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 ## Project  5: Description of some Machine Learning Algorithms
 
 This notebook is dedicated to exploring and describing different Machine learning algorithms. I will discuss the following here:
-1. Linear Regression
+### 1. Linear Regression
 - SVD and or Normal Equation
 - Gradient Descent
 - Mini Batch Gradient Descent
-- Polynomial Regression
 
-2. Polynomial Regression (Using Linear models to fit non-linear data)
+#### Linear Model Prediction Plot
+![linear Model Prediction plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/linear_model_predictions_plot.png)
 
-3. Regularization
+#### Gradient Descent Paths Plot
+![Gradient Descent Paths Plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/gradient_descent_paths_plot.png)
+
+
+
+### 2. Polynomial Regression (Using Linear models to fit non-linear data)
+
+#### Polynomial Regression (Quadratic Plot demonstrated)
+![Quadratic Plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/quadratic_predictions_plot.png)
+
+![High Degree Polynomials Plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/high_degree_polynomials_plot.png)
+
+### 3. Regularization
 - Ridge Regression
 - Lasso Regression
 - Elastic Net
 - Early Stopping (Very common in Gradient Descent)
 
-4. Logistic Regression (Using Probabilities)
+### 4. Logistic Regression (Using Probabilities)
 - Softmax Regression - A method to use Logistic Regression for Multinomial/ Multiclass Classification. 
 
 (Work in Progress)
