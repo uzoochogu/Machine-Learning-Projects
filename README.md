@@ -130,19 +130,19 @@ This notebook is dedicated to exploring and describing different Machine learnin
 - Mini Batch Gradient Descent
 
 #### Linear Model Prediction Plot
-![linear Model Prediction plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/linear_model_predictions_plot.png)
+![linear Model Prediction plot](/description-of-some-machine-learning-models/images/linear_model_predictions_plot.png)
 
 #### Gradient Descent Paths Plot
-![Gradient Descent Paths Plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/gradient_descent_paths_plot.png)
+![Gradient Descent Paths Plot](/description-of-some-machine-learning-models/images/gradient_descent_paths_plot.png)
 
 
 
 ### 2. Polynomial Regression (Using Linear models to fit non-linear data)
 
 #### Polynomial Regression (Quadratic Plot demonstrated)
-![Quadratic Plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/quadratic_predictions_plot.png)
+![Quadratic Plot](/description-of-some-machine-learning-models/images/quadratic_predictions_plot.png)
 
-![High Degree Polynomials Plot](https://github.com/uzoochogu/Machine-Learning-Projects/blob/main/description-of-some-machine-learning-models/images/high_degree_polynomials_plot.png)
+![High Degree Polynomials Plot](/description-of-some-machine-learning-models/images/high_degree_polynomials_plot.png)
 
 ### 3. Regularization
 - Ridge Regression
@@ -150,12 +150,26 @@ This notebook is dedicated to exploring and describing different Machine learnin
 - Elastic Net
 - Early Stopping (Very common in Gradient Descent)
 
+
+#### Ridge Regression Plot
+![Ridge Regression](/description-of-some-machine-learning-models/images/ridge_regression_plot.png)
+
+#### Lasso Regression Plot
+![Lasso Regression](/description-of-some-machine-learning-models/images/lasso_regression_plot.png)
+
+#### Early Stopping
+![Early Stopping](/description-of-some-machine-learning-models/images/early_stopping_plot.png)
+
 ### 4. Logistic Regression (Using Probabilities)
 - Softmax Regression - A method to use Logistic Regression for Multinomial/ Multiclass Classification. 
 
+
+
+#### Logisitic Regression Demonstration
+![Classifying Flower Species](/description-of-some-machine-learning-models/images/logistic_regression_plot.png)
+
+
 (Work in Progress)
-
-
 
 
 
