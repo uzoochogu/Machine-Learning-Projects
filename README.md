@@ -124,26 +124,52 @@ An CSV containing the predicted value of "True" or "False", representing the "Su
 ## Project  5: Description of some Machine Learning Algorithms
 
 This notebook is dedicated to exploring and describing different Machine learning algorithms. I will discuss the following here:
-1. Linear Regression
+### 1. Linear Regression
 - SVD and or Normal Equation
 - Gradient Descent
 - Mini Batch Gradient Descent
-- Polynomial Regression
 
-2. Polynomial Regression (Using Linear models to fit non-linear data)
+#### Linear Model Prediction Plot
+![linear Model Prediction plot](/description-of-some-machine-learning-models/images/linear_model_predictions_plot.png)
 
-3. Regularization
+#### Gradient Descent Paths Plot
+![Gradient Descent Paths Plot](/description-of-some-machine-learning-models/images/gradient_descent_paths_plot.png)
+
+
+
+### 2. Polynomial Regression (Using Linear models to fit non-linear data)
+
+#### Polynomial Regression (Quadratic Plot demonstrated)
+![Quadratic Plot](/description-of-some-machine-learning-models/images/quadratic_predictions_plot.png)
+
+![High Degree Polynomials Plot](/description-of-some-machine-learning-models/images/high_degree_polynomials_plot.png)
+
+### 3. Regularization
 - Ridge Regression
 - Lasso Regression
 - Elastic Net
 - Early Stopping (Very common in Gradient Descent)
 
-4. Logistic Regression (Using Probabilities)
+
+#### Ridge Regression Plot
+![Ridge Regression](/description-of-some-machine-learning-models/images/ridge_regression_plot.png)
+
+#### Lasso Regression Plot
+![Lasso Regression](/description-of-some-machine-learning-models/images/lasso_regression_plot.png)
+
+#### Early Stopping
+![Early Stopping](/description-of-some-machine-learning-models/images/early_stopping_plot.png)
+
+### 4. Logistic Regression (Using Probabilities)
 - Softmax Regression - A method to use Logistic Regression for Multinomial/ Multiclass Classification. 
 
+
+
+#### Logisitic Regression Demonstration
+![Classifying Flower Species](/description-of-some-machine-learning-models/images/logistic_regression_plot.png)
+
+
 (Work in Progress)
-
-
 
 
 
