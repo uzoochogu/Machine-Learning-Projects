@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(CPP Neural Network VERSION 1.0 DESCRIPTION "Implementation of Neural Network in C++")
+project("CPP Neural Network" VERSION 1.0 DESCRIPTION "Implementation of Neural Network in C++")
 
 
 
@@ -8,12 +8,6 @@ project(CPP Neural Network VERSION 1.0 DESCRIPTION "Implementation of Neural Net
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(SOURCES
+set(SOURCES /src/MLP.cpp)
 
-)
-
-set(HEADER_SET
-    /include/MLP.hpp
-
-
-)
+set(HEADER_SET /include/MLP.hpp)
