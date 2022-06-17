@@ -15,7 +15,7 @@ public:
     vector<double> weights;
     double bias;
     Perceptron(int inputs, double bias=1.0);
-    double run(vector<double> x);
+    double run(vector<double> x);                                //Implements a forward pass
     void set_weights(vector<double> w_init);
     double sigmoid(double x);
 };
@@ -29,11 +29,11 @@ public:
     vector<double> run(vector<double> x);
     double bp(vector<double> x, vector<double> y);
     
-    vector<int> layers;
-    double bias;
-    double eta;
-    vector<vector<Perceptron> > network;
-    vector<vector<double> > values;
-    vector<vector<double> > d;
+    vector<int> layers;                                         //Number of neurons per layer
+    double bias;                                                //Bias term                                              
+    double eta;                                                 //Learning rate
+    vector<vector<Perceptron> > network;                        //Actual network
+    vector<vector<double> > values;                             //output values for network
+    vector<vector<double> > deltas;                             //error terms for network  
 };
 
