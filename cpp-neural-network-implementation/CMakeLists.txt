@@ -8,6 +8,7 @@ project("CPP Neural Network" VERSION 1.0 DESCRIPTION "Implementation of Neural N
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(SOURCES /src/MLP.cpp)
+set(SOURCES MLP.cpp NeuralNetworkTester)
 
-set(HEADER_SET /include/MLP.hpp)
+
+add_executable(NeuralNetworkTester ${SOURCES})
