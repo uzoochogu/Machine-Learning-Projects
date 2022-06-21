@@ -9,3 +9,5 @@ cpp-neural-network-implementation/ZERO_CHECK.vcxproj
 cpp-neural-network-implementation/ZERO_CHECK.vcxproj.filters
 cpp-neural-network-implementation/NeuralNetworkTester.vcxproj
 cpp-neural-network-implementation/NeuralNetworkTester.vcxproj.filters
+
+microsoft-ml-flight-challenge/flights.csv
