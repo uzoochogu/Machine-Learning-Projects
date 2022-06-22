@@ -1,3 +1,4 @@
+.gitignore
 spam-classifier/datasets/
 cpp-neural-network-implementation/CMakeFiles
 cpp-neural-network-implementation/ALL_BUILD.vcxproj
@@ -11,3 +12,8 @@ cpp-neural-network-implementation/NeuralNetworkTester.vcxproj
 cpp-neural-network-implementation/NeuralNetworkTester.vcxproj.filters
 
 microsoft-ml-flight-challenge/flights.csv
+
+cpp-neural-network-implementation/NeuralNetworkTester.dir/
+cpp-neural-network-implementation/Debug/
+cpp-neural-network-implementation/x64/Debug/
+
