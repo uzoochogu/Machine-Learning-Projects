@@ -1,5 +1,5 @@
 #include <iostream>
-#include "MLP.h"
+#include "MLP.hpp"
 
 int main() 
 {

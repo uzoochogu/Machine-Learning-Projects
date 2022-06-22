@@ -1,4 +1,4 @@
-#include "MLP.h"
+#include "MLP.hpp"
 
 double frand()
 {
@@ -46,7 +46,7 @@ MultiLayerPerceptron::MultiLayerPerceptron(vector<int> layers, double bias, doub
     for (unsigned int i = 0; i < layers.size(); i++)
     {
         values.push_back(vector<double>(layers[i],0.0));                        //zero output for every neuron per layer
-        deltas.push_back(vector<double>(layers[i],0.0));                        //zero errors on creation
+        cost.push_back(vector<double>(layers[i],0.0));                          //zero errors on creation
         network.push_back(vector<Perceptron>());                                //initial empty perceptrons in network
       
         if (i > 0)                                                              //network[0] is the input layer,no neurons and perceptrons
@@ -67,7 +67,7 @@ void MultiLayerPerceptron::set_weights(vector<vector<vector<double> > > w_init)
 void MultiLayerPerceptron::print_weights() 
 {
     cout << endl;
-    for (int i = 1; i < network.size(); i++){
+    for (unsigned int i = 1; i < network.size(); i++){
         for (unsigned int j = 0; j < layers[i]; j++) {
             cout << "Layer " << i+1 << " Neuron " << j << ": ";
             for (auto &it: network[i][j].weights)
@@ -79,14 +79,15 @@ void MultiLayerPerceptron::print_weights()
 }
 
 //Feed a sample x into the Multilayer Perceptron.
-vector<double> MultilayerPerceptron::run(vector<double> x)
+vector<double> MultiLayerPerceptron::run(vector<double> x)
 {
   values[0] = x;                                         //input layer
   for(unsigned int i = 1; i < network.size(); i++)
   {
-    values[i][j] = network[i][j].run(values[i-1])
+    for(unsigned int j = 0; j < layers[i]; j++)
+        values[i][j] = network[i][j].run(values[i-1]);
   }
-  return values.back()    
+  return values.back();   
 }
 
 
@@ -109,27 +110,27 @@ double MultiLayerPerceptron::bp(vector<double> x, vector<double> y){
 
     // STEP 3: Calculate the output error terms
     for (int i = 0; i < outputs.size(); i++)
-        delta.back()[i] = outputs[i] * (1 - outputs[i]) * (error[i]);
+        cost.back()[i] = outputs[i] * (1 - outputs[i]) * (error[i]);
 
     // STEP 4: Calculate the error term of each unit on each layer    
     for (int i = network.size()-2; i > 0; i--)
         for (int h = 0; h < network[i].size(); h++){
             double fwd_error = 0.0;
             for (int k = 0; k < layers[i+1]; k++)
-                fwd_error += network[i+1][k].weights[h] * delta[i+1][k];
-            delta[i][h] = values[i][h] * (1-values[i][h]) * fwd_error;
+                fwd_error += network[i+1][k].weights[h] * cost[i+1][k];
+            cost[i][h] = values[i][h] * (1-values[i][h]) * fwd_error;
         }
     
     // STEPS 5 & 6: Calculate the deltas and update the weights
     for (int i = 1; i < network.size(); i++)
         for (int j = 0; j < layers[i]; j++)
             for (int k = 0; k < layers[i-1]+1; k++){
-                double cost;
+                double delta;
                 if (k==layers[i-1])
-                    cost = eta * delta[i][j] * bias;
+                    delta = eta * cost[i][j] * bias;
                 else
-                    cost = eta * delta[i][j] * values[i-1][k];
-                network[i][j].weights[k] += cost;
+                    delta = eta * cost[i][j] * values[i-1][k];
+                network[i][j].weights[k] += delta;
             }
     return MSE;
 }

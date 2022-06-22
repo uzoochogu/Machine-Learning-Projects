@@ -34,6 +34,6 @@ public:
     double eta;                                                 //Learning rate
     vector<vector<Perceptron> > network;                        //Actual network
     vector<vector<double> > values;                             //output values for network
-    vector<vector<double> > deltas;                             //error terms for network  
+    vector<vector<double> > cost;                             //error terms for network  
 };
 
