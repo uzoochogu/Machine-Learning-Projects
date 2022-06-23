@@ -2,7 +2,7 @@
 
 double frand()
 {
-	return (2.0*(double)rand() / RAND_MAX) - 1.0;
+	return (2.0*(double)rand() / RAND_MAX) - 1.0;                     //between 0-1
 }
 
 
@@ -46,7 +46,7 @@ MultiLayerPerceptron::MultiLayerPerceptron(vector<int> layers, double bias, doub
     for (unsigned int i = 0; i < layers.size(); i++)
     {
         values.push_back(vector<double>(layers[i],0.0));                        //zero output for every neuron per layer
-        cost.push_back(vector<double>(layers[i],0.0));                          //zero errors on creation
+        prop_error.push_back(vector<double>(layers[i],0.0));                          //zero errors on creation
         network.push_back(vector<Perceptron>());                                //initial empty perceptrons in network
       
         if (i > 0)                                                              //network[0] is the input layer,no neurons and perceptrons
@@ -110,15 +110,15 @@ double MultiLayerPerceptron::bp(vector<double> x, vector<double> y){
 
     // STEP 3: Calculate the output error terms
     for (int i = 0; i < outputs.size(); i++)
-        cost.back()[i] = outputs[i] * (1 - outputs[i]) * (error[i]);
+        prop_error.back()[i] = outputs[i] * (1 - outputs[i]) * (error[i]);
 
     // STEP 4: Calculate the error term of each unit on each layer    
     for (int i = network.size()-2; i > 0; i--)
         for (int h = 0; h < network[i].size(); h++){
             double fwd_error = 0.0;
             for (int k = 0; k < layers[i+1]; k++)
-                fwd_error += network[i+1][k].weights[h] * cost[i+1][k];
-            cost[i][h] = values[i][h] * (1-values[i][h]) * fwd_error;
+                fwd_error += network[i+1][k].weights[h] * prop_error[i+1][k];
+            prop_error[i][h] = values[i][h] * (1-values[i][h]) * fwd_error;
         }
     
     // STEPS 5 & 6: Calculate the deltas and update the weights
@@ -127,9 +127,9 @@ double MultiLayerPerceptron::bp(vector<double> x, vector<double> y){
             for (int k = 0; k < layers[i-1]+1; k++){
                 double delta;
                 if (k==layers[i-1])
-                    delta = eta * cost[i][j] * bias;
+                    delta = eta * prop_error[i][j] * bias;
                 else
-                    delta = eta * cost[i][j] * values[i-1][k];
+                    delta = eta * prop_error[i][j] * values[i-1][k];
                 network[i][j].weights[k] += delta;
             }
     return MSE;

@@ -34,5 +34,34 @@ int main()
   std::cout<<"0 1 = "<<mlp.run({0,1})[0]<<endl;
   std::cout<<"1 0 = "<<mlp.run({1,0})[0]<<endl;
   std::cout<<"1 1 = "<<mlp.run({1,1})[0]<<endl; 
+
+
+  //test code - Trained XOR
+  std::cout<<"\n\n--------Trained XOR Example----------------\n\n";
+  mlp = MultiLayerPerceptron({2,2,1});
+  std::cout<<"Training Neural Network as an XOR Gate...\n";
+  double MSE;
+  for (int i = 0; i < 3000; i++)
+  {
+      MSE = 0.0;
+
+      //dataset
+      MSE += mlp.bp({0,0},{0});
+      MSE += mlp.bp({0,1},{1});
+      MSE += mlp.bp({1,0},{1});
+      MSE += mlp.bp({1,1},{0});
+      MSE = MSE / 4.0;                               //batch gradient descent (batch of 4)
+      if (i % 100 == 0)                             //print error every 100 epochs
+          std::cout<<"MSE = "<<MSE<<endl;
+  }
+
+  std::cout<<"\n\nTrained weights (Compare to hard-coded weights):\n\n";
+  mlp.print_weights();
+
+  std::cout<<"XOR:"<<endl;
+  std::cout<<"0 0 = "<<mlp.run({0,0})[0]<<endl;
+  std::cout<<"0 1 = "<<mlp.run({0,1})[0]<<endl;
+  std::cout<<"1 0 = "<<mlp.run({1,0})[0]<<endl;
+  std::cout<<"1 1 = "<<mlp.run({1,1})[0]<<endl;  
 }
 

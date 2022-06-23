@@ -33,7 +33,7 @@ public:
     double bias;                                                //Bias term                                              
     double eta;                                                 //Learning rate
     vector<vector<Perceptron> > network;                        //Actual network
-    vector<vector<double> > values;                             //output values for network
-    vector<vector<double> > cost;                             //error terms for network  
+    vector<vector<double> > values;                             //output values per neuron 
+    vector<vector<double> > prop_error;                         //propagated error terms per neuron 
 };
 
