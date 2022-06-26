@@ -19,3 +19,14 @@ Future updates may include implementations of matrix and linear algebra operatio
 (This might be ported to a separate repositary depending on the scale)
 
 
+The `NeuralNetworkTester.cpp` and resulting executable tests the neural network developed. It also contains a small program to test a neural network for recognising digits from a seven segment display.
+Three network architectures were used:
+1. 7-7-1 : The output neuron gives a value between 0-9. This network is not ideal and the neural net learn some unnecessary information.
+2. 7-7-10: Each output neuron is a binary classifier and the neuron with the highest probability is the predicted digit. This is ideal.
+3. 7-7-7: This architecture can provide insight on how the neural network works.
+
+#### TODO:
+The Segment Digit Recognition program would be moved to another source file. 
+A GUI using JUCE would be also made to ease entering the segment brightness levels.
+
+
