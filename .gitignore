@@ -18,3 +18,6 @@ cpp-neural-network-implementation/Debug/
 cpp-neural-network-implementation/x64/Debug/
 
 .vscode/settings.json
+cpp-neural-network-implementation/SegmentDisplayClassifer.dir/
+cpp-neural-network-implementation/SegmentDisplayClassifer.vcxproj
+cpp-neural-network-implementation/SegmentDisplayClassifer.vcxproj.filters
