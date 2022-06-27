@@ -8,7 +8,10 @@ project("CPP Neural Network" VERSION 1.0 DESCRIPTION "Implementation of Neural N
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(SOURCES MLP.cpp NeuralNetworkTester.cpp)
+set(SOURCES1 MLP.cpp NeuralNetworkTester.cpp)
+set(SOURCES2 MLP.cpp sdrnn.cpp)
 
 
-add_executable(NeuralNetworkTester ${SOURCES})
+add_executable(NeuralNetworkTester ${SOURCES1})
+
+add_executable(SegmentDisplayClassifer ${SOURCES2})
